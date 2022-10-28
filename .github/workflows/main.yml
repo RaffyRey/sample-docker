@@ -28,7 +28,7 @@ jobs:
           context: sample-redux
           file: sample-redux/Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/simplewhale:latest
-          cache-from: type=registry,ref=${{ secrets.DOCKER_HUB_USERNAME }}/simplewhale:buildcache
-          cache-to: type=registry,ref=${{ secrets.DOCKER_HUB_USERNAME }}/simplewhale:buildcache,mode=max
+          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/sample-docker:latest
+          cache-from: type=registry,ref=${{ secrets.DOCKER_HUB_USERNAME }}/sample-docker:buildcache
+          cache-to: type=registry,ref=${{ secrets.DOCKER_HUB_USERNAME }}/sample-docker:buildcache,mode=max
           
