@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  sample-redux:
+    build: ./sample-redux
+    container_name: sample_c
+    ports:
+      - '3000:3000'
+    stdin_open: true
